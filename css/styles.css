@@ -169,3 +169,25 @@ tbody tr:nth-child(even) {
         width: 100%;
     }
 }
+
+/* BONUSTEHTÄVÄT: KUVAN SIIRTO, ANIMAATIO JA HÄIVYTYS */
+#animalImage {
+    transition: transform 0.5s, opacity 1s;
+}
+
+.moved {
+    transform: translateX(150px);
+}
+
+.wiggle {
+    animation: wiggle 0.3s infinite alternate;
+}
+
+@keyframes wiggle {
+    from { transform: rotate(-10deg); }
+    to   { transform: rotate(10deg); }
+}
+
+.faded {
+    opacity: 0;
+}
